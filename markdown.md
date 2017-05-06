@@ -87,7 +87,7 @@ The histogram is made with the binwidth setting at 2000.
 qplot(stepperday$steps, geom = 'histogram', xlab = "Steps", main = "Total number of steps taken each day", binwidth = 2000)
 ```
 
-![](figure-html/plot step per day-1.png)<!-- -->
+![plot step per day](figure-html/plot step per day-1.png)
 
 ###Step 3: Calculate and report the mean and median of the total number of steps taken per day
 It is done by the following code:
