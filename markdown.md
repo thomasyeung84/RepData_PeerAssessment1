@@ -89,7 +89,7 @@ The histogram is made with the binwidth setting at 2000.
 qplot(stepperday$steps, geom = 'histogram', xlab = "Steps", main = "Total number of steps taken each day", binwidth = 2000)
 ```
 
-![step per day](markdown/markdown-plot step per day-1.png?raw=true)
+![](markdown/markdown-plot-step-per-day-1.png)<!-- -->
 
 ###Step 3: Calculate and report the mean and median of the total number of steps taken per day
 It is done by the following code:
@@ -120,7 +120,7 @@ Make a time series plot (type = 'l') of the 5-minute interval (x-axis) and the a
 qplot (averagestep$interval, averagestep$averagestep, geom = 'line', xlab = "Time interval", ylab = "Average Step", main = "Average number of steps taken in time of the day")
 ```
 
-![](markdown/markdown-plot average step-1.png)<!-- -->
+![](markdown/markdown-plot-average-step-1.png)<!-- -->
 
 ###Step 2: Looking for the max time interval
 The time interval that with the maximum average step could be found by `which.max` function. 
@@ -175,7 +175,7 @@ Then the histogram is plotted.
 qplot(completestepperday$steps, geom = 'histogram', xlab = "Steps", main = "Total number of steps taken each day (missing data replaced)", binwidth = 2000)
 ```
 
-![](markdown/markdown-plotting complete step per day-1.png)<!-- -->
+![](markdown/markdown-plotting-complete-step-per-day-1.png)<!-- -->
 
 ###Step 3: claculate and report the mean and median total number of steps taken per day
 The mean and median is calculated by
@@ -235,7 +235,7 @@ stepperinterval <- completedataset %>% group_by(interval, daytype) %>% summarize
 ggplot (data=stepperinterval, aes(interval, steps)) + geom_line() + facet_grid(daytype~.)
 ```
 
-![](markdown/markdown-panel plot and weekday average-1.png)<!-- -->
+![](markdown/markdown-panel-plot-and-weekday-average-1.png)<!-- -->
 
 ```r
 #the average number of steps for each interval taken on weekend and weekday is calculated and compared
